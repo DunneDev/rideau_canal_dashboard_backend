@@ -1,0 +1,6 @@
+@rideau_canal_dashboard_backend_HostAddress = http://localhost:5157
+
+GET {{rideau_canal_dashboard_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
