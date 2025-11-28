@@ -24,7 +24,7 @@ stored in the `appsettings.json` file. The structure should look like this:
       "Microsoft.AspNetCore": "Warning"
     }
   },
-  "AllowedHosts": "\*",
+  "AllowedHosts": "*",
   "CosmosDb": {
     "AccountEndpoint": "YOUR_COSMOSDB_ENDPOINT",
     "AccountKey": "YOUR_COSMOSDB_PRIMARY_KEY",
