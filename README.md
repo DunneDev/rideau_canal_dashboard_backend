@@ -13,18 +13,12 @@ This project is a simple ASP.NET Core Web API designed to retrieve the latest se
 
 ## Configuration
 
-The application requires connection details for the Cosmos DB database to be
-stored in the `appsettings.json` file. The structure should look like this:
+In order to run the server locally it requires connection details for the
+Cosmos DB database to be stored in the `appsettings.Development.json` file. The structure
+should look like this:
 
 ```json
 {
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning"
-    }
-  },
-  "AllowedHosts": "*",
   "CosmosDb": {
     "AccountEndpoint": "YOUR_COSMOSDB_ENDPOINT",
     "AccountKey": "YOUR_COSMOSDB_PRIMARY_KEY",
