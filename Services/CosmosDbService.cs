@@ -22,7 +22,7 @@ public class CosmosDbService
     public async Task<IEnumerable<SensorReading>> GetLatestReadingsAsync()
     {
         var query = new QueryDefinition(
-            "SELECT * FROM c ORDER BY c.window_end DESC OFFSET 0 LIMIT 60"
+            "SELECT * FROM c ORDER BY c.window_end DESC OFFSET 0 LIMIT 30"
         );
         var results = new List<SensorReading>();
 
